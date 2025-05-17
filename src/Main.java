@@ -1,10 +1,14 @@
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         String[] arr = {"Hello", "world"};
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                System.out.println(arr[i] + " " + arr[j]);
+        StringBuilder sb = new StringBuilder();
+
+        for (String outer : arr) {
+            for (String inner : arr) {
+                sb.append(outer).append(' ').append(inner).append('\n');
             }
         }
+
+        System.out.print(sb);
     }
 }
