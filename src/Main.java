@@ -6,9 +6,9 @@ public class Main {
 
         for (String outer : arr) {
             for (String inner : arr) {
-                sb.append(outer).append(' ').append(inner).append('\n');
+                System.out.print(outer + " " + inner);
             }
         }
-        System.out.print(sb);
+        
     }
 }
