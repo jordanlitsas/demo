@@ -9,7 +9,7 @@ public class Main {
                 sb.append(outer).append(' ').append(inner).append('\n');
             }
         }
-
+        System.out.print("printing");
         System.out.print(sb);
     }
 }
