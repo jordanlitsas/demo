@@ -1,13 +1,12 @@
 public class Main {
     //test
     public static void main(String[] args) {
-        String[] arr = {"Hello", "world"};
-        StringBuilder sb = new StringBuilder();
-
-        for (String outer : arr) {
-            for (String inner : arr) {
-                sb.append(outer).append(' ').append(inner).append('\n');
-            }
+        System.out.println("hello");
+        Dog dog = new Dog();
+        dog.setAction("BARK");
+        System.out.println(dog.getAction());
+        for (int i = 0; i < 3; i++) {
+            System.out.println(dog.getAction());
         }
         System.out.print(sb);
     }
